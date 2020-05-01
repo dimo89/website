@@ -23,11 +23,12 @@
     text-indent: -9999px;
     width: 60px;
     height: 28px;
-    box-shadow: -7px -7px 15px 0 var(--theme-shadowOne),
-      7px 7px 15px 0 var(--theme-shadowTwo),
-      inset -7px -7px 15px 0 var(--theme-shadowOne),
-      inset 7px 7px 15px 0 var(--theme-shadowTwo);
-    background: var(--theme-background);
+    box-shadow: -7px -7px 15px var(--theme-shadowOne),
+      7px 7px 15px var(--theme-shadowTwo),
+      inset -7px -7px 15px var(--theme-shadowOne),
+      inset 7px 7px 15px var(--theme-shadowTwo);
+    background-color: var(--theme-background);
+    transition: all 200ms linear;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -39,7 +40,7 @@
 
   label:after {
     content: "";
-    background: var(--theme-background);
+    background-color: var(--theme-background);
     box-shadow: inset 7px 7px 15px var(--theme-shadowOne),
       inset -7px -7px 15px var(--theme-shadowTwo);
     width: 22px;
@@ -51,7 +52,8 @@
   }
 
   input:checked + label {
-    background: var(--theme-background);
+    background-color: var(--theme-background);
+    transition: all 200ms linear;
   }
 
   input:checked + label:after {
