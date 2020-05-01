@@ -23,10 +23,10 @@
     text-indent: -9999px;
     width: 60px;
     height: 28px;
-    box-shadow: -7px -7px 15px var(--theme-shadowOne),
-      7px 7px 15px var(--theme-shadowTwo),
-      inset -7px -7px 15px var(--theme-shadowOne),
-      inset 7px 7px 15px var(--theme-shadowTwo);
+    box-shadow: -9px -9px 18px var(--theme-shadowOne),
+      9px 9px 18px var(--theme-shadowTwo),
+      inset -9px -9px 18px var(--theme-shadowOne),
+      inset 9px 9px 18px var(--theme-shadowTwo);
     background-color: var(--theme-background);
     transition: all 200ms linear;
     margin: 0 auto;
@@ -41,8 +41,8 @@
   label:after {
     content: "";
     background-color: var(--theme-background);
-    box-shadow: inset 7px 7px 15px var(--theme-shadowOne),
-      inset -7px -7px 15px var(--theme-shadowTwo);
+    box-shadow: inset 9px 9px 18px var(--theme-shadowOne),
+      inset -9px -9px 18px var(--theme-shadowTwo);
     width: 22px;
     height: 22px;
     border-radius: 50%;

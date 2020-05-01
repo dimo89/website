@@ -3,8 +3,8 @@ export const presets = [
     name: "light",
     colors: {
       text: "#282230",
-      background: "#ececec",
-      backgroundTwo: "#d4d4d4",
+      background: "#dddddd",
+      backgroundTwo: "#c6c6c6",
       switch: "#fbde0d",
       shadowOne: "rgba(255, 255, 255, 0.4)",
       shadowTwo: "rgba(0, 0, 0, 0.05)",
