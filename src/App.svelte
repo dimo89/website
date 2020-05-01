@@ -1,6 +1,6 @@
 <script>
-  import ThemeToggle from "./ThemeToggle.svelte"
-  import ThemeContext from "./ThemeContext.svelte"
+  import ThemeToggle from "./Theme/ThemeToggle.svelte"
+  import ThemeContext from "./Theme/ThemeContext.svelte"
   import Button from "./Button.svelte"
   import LinkedInIcon from "./Icons/LinkedIn.svelte"
   import GithubIcon from "./Icons/Github.svelte"
