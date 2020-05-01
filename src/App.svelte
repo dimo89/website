@@ -1,6 +1,11 @@
 <script>
   import ThemeToggle from "./ThemeToggle.svelte"
   import ThemeContext from "./ThemeContext.svelte"
+  import Button from "./Button.svelte"
+  import LinkedInIcon from "./Icons/LinkedIn.svelte"
+  import GithubIcon from "./Icons/Github.svelte"
+  import TwitterIcon from "./Icons/Twitter.svelte"
+  import Hero from "./Hero.svelte"
 </script>
 
 <style>
@@ -10,25 +15,48 @@
     transition: background-color 200ms linear;
   }
 
-  main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
+  :global(body) {
+    font-family: "Dosis", sans-serif;
   }
 
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
+  main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  .buttonsWrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+  }
+  :global(svg[ref="social"]) {
+    color: var(--theme-text);
+    width: 22px;
+    height: 22px;
+    transition: color 0.1s linear;
   }
 </style>
 
 <svelte:head>
-  <title>DK</title>
+  <title>Dmitri Karasjov | FE/UX</title>
 </svelte:head>
 <ThemeContext>
   <main>
     <ThemeToggle />
+    <Hero />
+    <div class="buttonsWrapper">
+      <Button link="https://www.linkedin.com/in/dmitrikarasjov/">
+        <LinkedInIcon />
+      </Button>
+      <Button link="https://github.com/dimo89">
+        <GithubIcon />
+      </Button>
+      <Button link="https://twitter.com/DmitriKarasjov">
+        <TwitterIcon />
+      </Button>
+    </div>
   </main>
 </ThemeContext>
