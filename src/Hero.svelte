@@ -11,19 +11,14 @@
 
   span {
     color: var(--theme-text);
-    text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 100;
     margin-bottom: 0px;
     transition: color 200ms linear;
-  }
-
-  span:nth-child(2) {
-    font-size: 3em;
+    max-width: 60%;
   }
 </style>
 
 <div>
-  <span>Dmitri Karasjov</span>
-  <span>FE/UX</span>
+  <span>Hi! I'm Dmitri Karasjov, web designer and front-end engineer.</span>
 </div>

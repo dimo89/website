@@ -41,7 +41,7 @@
 </style>
 
 <svelte:head>
-  <title>Dmitri Karasjov | FE/UX</title>
+  <title>Homepage | Dmitri Karasjov</title>
 </svelte:head>
 <ThemeContext>
   <main>
