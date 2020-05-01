@@ -21,35 +21,41 @@
   label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 40px;
-    height: 18px;
-    background: var(--theme-switchBackground);
+    width: 60px;
+    height: 28px;
+    box-shadow: -7px -7px 15px 0 var(--theme-shadowOne),
+      7px 7px 15px 0 var(--theme-shadowTwo),
+      inset -7px -7px 15px 0 var(--theme-shadowOne),
+      inset 7px 7px 15px 0 var(--theme-shadowTwo);
+    background: var(--theme-background);
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+    border: 5px solid var(--theme-background);
     position: relative;
   }
 
   label:after {
     content: "";
-    background: var(--theme-switch);
-    box-shadow: 0 0 7px 1px var(--theme-switch);
+    background: var(--theme-background);
+    box-shadow: inset 7px 7px 15px var(--theme-shadowOne),
+      inset -7px -7px 15px var(--theme-shadowTwo);
     width: 22px;
     height: 22px;
     border-radius: 50%;
     position: absolute;
-    left: 0px;
+    left: 5px;
     transition: ease-in-out 200ms;
   }
 
   input:checked + label {
-    background: var(--theme-switchBackground);
+    background: var(--theme-background);
   }
 
   input:checked + label:after {
-    left: 100%;
+    left: calc(100% - 5px);
     transform: translateX(-100%);
   }
 </style>

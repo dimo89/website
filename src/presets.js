@@ -3,9 +3,11 @@ export const presets = [
     name: "light",
     colors: {
       text: "#282230",
-      background: "#ffffff",
+      background: "#ececec",
+      backgroundTwo: "#d4d4d4",
       switch: "#fbde0d",
-      switchBackground: "#93e6ef",
+      shadowOne: "rgba(255, 255, 255, 0.4)",
+      shadowTwo: "rgba(0, 0, 0, 0.05)",
     },
   },
   {
@@ -13,8 +15,10 @@ export const presets = [
     colors: {
       text: "#f1f1f1",
       background: "#27323a",
+      backgroundTwo: "#232d34",
       switch: "#fafbb2",
-      switchBackground: "#3e5a98",
+      shadowOne: "rgba(0, 0, 0, 0.4)",
+      shadowTwo: "rgba(255, 255, 255, 0.05)",
     },
   },
-];
+]
